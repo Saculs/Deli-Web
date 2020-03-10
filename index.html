@@ -9,33 +9,62 @@
   overflow: hidden;
 }
 
-img {
+.mainmenu {
+    padding-top: 30px;
+}
+
+.logo {
+    padding-left: 60px;
     max-width: 100%;
     max-height: 100%;
-    align: left;
-    width: 400px;
+    float: left;
+    width: 100px;
+}
+
+.insta {
+padding-left: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+    width: 50px;
+}
+
+.faceb {
+    padding-left: 12px;
+    max-width: 100%;
+    max-height: 100%;
+    float:right;
+    height: 50px;
+}
+
+.social {
+    padding-right: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    float:right;
+    height: 50px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
+
+  color: #7a7a7a;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  /*background-color: #ddd;*/
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+  color: black;
 }
     </style>
   </head>
@@ -43,14 +72,42 @@ img {
 
     <div class="topnav">
             <img class="logo" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png">
+            <center>
+            <div class = "mainmenu">
             <a class="active" href="#home">HOME</a>
             <a href="#news">MENU</a>
             <a href="#coffe">KAVA</a>
             <a href="#about">O NAS</a>
             <a href="#contact">KONTAKT</a>
-            <img class="social" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/ig.png">
-            <img class="social" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+            </div>
+            </center>
+            <div class="social">
+            <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
+            <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+            </div>
     </div>
+
+    <div class = "gallery">
+    <div class="row">
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png">
+    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png">
+    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
+    <img src="paris.jpg">
+    <img src="nature.jpg">
+    <img src="mist.jpg">
+    <img src="paris.jpg">
+  </div>
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
+    <img src="ocean.jpg">
+    <img src="wedding.jpg">
+    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
+    <img src="rocks.jpg">
+    <img src="underwater.jpg">
+  </div>
+</div>
+</div>
 
 
   </body>
