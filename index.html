@@ -11,6 +11,18 @@
 
 .mainmenu {
     padding-top: 30px;
+width: 600px;
+}
+.int {
+    width: 40%;
+}
+.first {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.gallery {
+    text-align: center;
 }
 
 .logo {
@@ -21,8 +33,12 @@
     width: 100px;
 }
 
+.footer {
+    margin-top: 60px;
+}
+
 .insta {
-padding-left: 40px;
+    padding-left: 40px;
     max-width: 100%;
     max-height: 100%;
     float: right;
@@ -39,14 +55,12 @@ padding-left: 40px;
 
 .social {
     padding-right: 60px;
-    max-width: 100%;
-    max-height: 100%;
-    float:right;
+float: right;
     height: 50px;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.mainmenu a {
 
   color: #7a7a7a;
   text-align: center;
@@ -57,15 +71,38 @@ padding-left: 40px;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.mainmenu a:hover {
   /*background-color: #ddd;*/
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.mainmenu a.active {
   color: black;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.column p {
+  float:left;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
     </style>
   </head>
   <body>
@@ -82,32 +119,33 @@ padding-left: 40px;
             </div>
             </center>
             <div class="social">
-            <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-            <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+            <a href="#Instagram"><img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+            <a href="#Facebook"><img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
             </div>
     </div>
-
+    <img class="first" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png">
     <div class = "gallery">
     <div class="row">
   <div class="column">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="paris.jpg">
-    <img src="nature.jpg">
-    <img src="mist.jpg">
-    <img src="paris.jpg">
+    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png">
+
+    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
+    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliFotkaDole.png">
   </div>
   <div class="column">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="rocks.jpg">
-    <img src="underwater.jpg">
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
   </div>
 </div>
 </div>
+
+<footer id="footer">
+  <div class="social">
+  <a href="#Instagram"><img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+  <a href="#Facebook"><img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
+  </div>
+  </footer>
 
 
   </body>
