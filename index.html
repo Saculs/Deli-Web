@@ -16,13 +16,60 @@ width: 600px;
 .int {
     width: 40%;
 }
+.inte {
+    width: 30%;
+}
 .first {
-    width: 100%;
+    
+    height: 10%;
     margin: 0;
     padding: 0;
 }
 .gallery {
     text-align: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 36px;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -33,8 +80,18 @@ width: 600px;
     width: 100px;
 }
 
-.footer {
-    margin-top: 60px;
+#footer {
+    margin:60px;
+}
+
+footer a {
+
+  color: #7a7a7a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
 }
 
 .insta {
@@ -66,7 +123,7 @@ float: right;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
 
 }
 
@@ -124,23 +181,22 @@ float: right;
             </div>
     </div>
     <img class="first" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png">
-    <div class = "gallery">
-    <div class="row">
-  <div class="column">
-    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png">
-
-    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img class="int" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliFotkaDole.png">
-  </div>
-  <div class="column">
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-  </div>
+    <div class="container">
+  <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png" alt="Snow" style="width:100%;">
+  <!--<div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>-->
+  <div class="centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 </div>
-</div>
+
+<div >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
 <footer id="footer">
+  <a href="#news">MENU</a>
+  <a href="#coffe">KAVA</a>
+  <a href="#about">O NAS</a>
+  <a href="#contact">KONTAKT</a>
   <div class="social">
   <a href="#Instagram"><img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
   <a href="#Facebook"><img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
