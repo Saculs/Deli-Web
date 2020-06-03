@@ -1,16 +1,49 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>DeliEngine</title>
+<head>
+<title>DeliEngine</title>
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha256-47ID+V2VWUtAdqO9l5GlnnbwqLCUtputV73sG/rBZ3k=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha256-l0tJvh77claYa8GowKaFNxtuRWZICtwHTk7+0tgsiZY=" crossorigin="anonymous" />
+ 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white','white'],
+                paddingTop: '100px',
+                
+            });
+        });
+    </script>
+ 
     <style>
-    /* Add a black background color to the top navigation */
-.topnav {
-  /*background-color: #333;*/
-  overflow: hidden;
+    header {
+ width: 100%;
+ background-color: white;
+ position: fixed;
+ height: 100px;
+ top: 0;
+ z-index: 99;
+}
+
+.topnav{
+margin-top:5px;
+margin-bottom:15px;
 }
 
 .mainmenu {
     padding-top: 30px;
+    font-family: customFont;
+    top: 50%;
+    
 }
 
 .logo {
@@ -26,7 +59,8 @@ padding-left: 40px;
     max-width: 100%;
     max-height: 100%;
     float: right;
-    width: 50px;
+    width: 30px;
+    vertical-align: middle;
 }
 
 .faceb {
@@ -34,7 +68,9 @@ padding-left: 40px;
     max-width: 100%;
     max-height: 100%;
     float:right;
-    height: 50px;
+    height: 30px;
+    vertical-align: middle;
+    top:50%;
 }
 
 .social {
@@ -45,6 +81,10 @@ padding-left: 40px;
     height: 50px;
 }
 
+.topnav-right {
+float:right;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
 
@@ -52,7 +92,7 @@ padding-left: 40px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 
 }
 
@@ -66,49 +106,177 @@ padding-left: 40px;
 .topnav a.active {
   color: black;
 }
-    </style>
-  </head>
-  <body>
 
+
+        
+        @font-face {
+  font-family: customFont;
+  src: url(Gotham-Book/Gotham-Book.woff);
+}   
+
+        body{
+        margin:0;
+        padding:0;
+        background-color: white;
+		}
+
+        .section{
+            font-size: 6em;
+            text-align: center;
+            background-size: cover;
+            background-color: whitesmoke;
+        }
+
+        #section0{
+        
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png);
+        background-size: cover;
+		}
+        #section1{
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/coffe.jpg);
+        background-size: cover;
+		}
+        #section2{
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/winee.jpg);
+        background-size: cover;
+		}
+        #section3{
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/cakes.jpg);
+        background-size: cover;
+		}
+        #section4{
+		}
+
+        .secText{
+      font-size: 37px; width:60%;padding-left:20%; float:center; 
+      font-family: customFont; color:white;
+		}
+
+        h2{
+      font-size: 45px; width:60%;padding-left:20%; float:center; 
+      font-family: customFont; color:white;
+		}
+
+        .registrText{
+      font-size: 37px; width:60%;padding-left:20%; float:center; 
+      font-family: customFont; color:white;
+		}
+         .registrTextt{
+      font-size: 37px; width:60%;padding-left:20%; float:center; 
+      font-family: customFont; color:white;
+		}
+
+        .registrTop{
+      font-size: 30px; width:60%; float:center; 
+      font-family: customFont; color:white;
+		}
+
+        .kontaktText{
+      font-size: 30px; width:60%;padding-left:20%; float:center; 
+      font-family: customFont; color:Black;
+		}
+
+        .locationText{
+      font-size: 30px; width:60%; padding-left:5%; 
+      font-family: customFont; color:Black; text-align: left; margin-bottom:20px;
+		}
+
+        input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+    </style>
+</head>
+ 
+<body>
+        <header>
     <div class="topnav">
             <img class="logo" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png">
-            <center>
+        
             <div class = "mainmenu">
-            <a class="active" href="#home">HOME</a>
-            <a href="#news">MENU</a>
-            <a href="#coffe">KAVA</a>
-            <a href="#about">O NAS</a>
-            <a href="#contact">KONTAKT</a>
-            </div>
-            </center>
+            <a class="active" href="#home">O NÁS</a> 
+            <a href="#coffe">KÁVA</a>
+            <a href="#wine">VÍNO</a>
+            <a href="#cakes">DORTY</a>  
+            <a href="#kontakt">KONTAKT</a>
+
+
             <div class="social">
             <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
             <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
             </div>
+
+            </div>
+
+            
     </div>
 
-    <div class = "gallery">
-    <div class="row">
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliCafe.png">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliInte.png">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="paris.jpg">
-    <img src="nature.jpg">
-    <img src="mist.jpg">
-    <img src="paris.jpg">
-  </div>
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
-    <img src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/DeliJidlo.png">
-    <img src="rocks.jpg">
-    <img src="underwater.jpg">
-  </div>
-</div>
-</div>
+    </header>
+
+    <div id="fullpage">
+        <div class="section" id="section0" data-anchor="home">
+        <h2 >O nás</h2>
+        <div class="secText"></br>Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je naše motto.
+Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
+V naší pekárně pro vás připravujeme jak sladké, tak slané. Ale vždy čerstvé.</div>
+ <div class="registrTextt"></br></br>Registrujte se a těšte na množství výhod</div>
+<div class="registrText">
 
 
-  </body>
+
+<div class="email-form" style="text-align: center; marginTop:10px;paddingTop: 10px;">
+  <label for="email_input" class="registrTop">Co vám to přinese?</br> Jako první budete vědět o voňavých novinkác</br>a
+získáte bonus ve formě</br>Pro Registraci Zadejte vaši emailovou adresu</br></label>
+  <div style="height:10px;"></div>
+<input type="email" name="email" id="email_input" placeholder="Váš E-mail">
+<input type="submit" class="send" value="Registrovat">
+  </div>
+
+</div>
+
+</div>
+        <div class="section" id="section1" data-anchor="coffe">
+        <h2 >Káva</h2>
+            <div class="secText">
+            Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
+kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
+Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
+kávu za sníženou cenu!
+            </div>
+        </div>
+        <div class="section" id="section2" data-anchor="wine">
+        <h2 >Víno</h2>
+        <div class="secText">
+            Připravujeme spolupráci s vybranými
+českými vinaři.
+            </div>
+            </div>
+        <div class="section" id="section3" data-anchor="cakes">
+        <h2>Dorty</h2>
+        <div class="secText">
+           Připravíme pro vás ty nejlepší domácí dorty na míru ve spolupráci s lokálními cukráři.
+            </div>
+        </div>
+        
+        <div class="section" id="section4" data-anchor="kontakt">
+            <div class="leftKontakt">
+            <div class="locationText">Walterovo náměstí 985/6, 158 00 Praha 5</div>
+            <div class="mapouter" style="padding-left:5%"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}</style></div>
+            </div>
+            <div class="rightKontakt">
+            <div class="kontaktText">
+            Kontakt</br></br> info@deliengine.cz</br>kontaktní osoba - Robert Havel</br></br>
+telefon +420 603 255 554
+</div>
+</div>
+        </div>
+
+    </div>
+
+    
+</body>
 </html>
