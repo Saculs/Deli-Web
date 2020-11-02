@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
     integrity="sha256-l0tJvh77claYa8GowKaFNxtuRWZICtwHTk7+0tgsiZY=" crossorigin="anonymous" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
   <script type="text/javascript">
     $(document).ready(function () {
       $('#fullpage').fullpage({
@@ -142,7 +140,7 @@
       margin: -100px 0 0 -50px;
       padding: 50px;
       padding-top: 125px;
-      font-family: 'Roboto';
+      font-family: customFont;
 
       height: 10000%;
 
@@ -225,7 +223,7 @@
 
     .mainmenu {
       padding-top: 30px;
-      font-family: 'Roboto';
+      font-family: customFont;
       top: 50%;
       text-align: center;
     }
@@ -333,6 +331,7 @@
 
 
     @font-face {
+      font-family: customFont;
       src: url(Gotham-Book/Gotham-Book.woff);
     }
 
@@ -352,7 +351,7 @@
 
     #section0 {
 
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/home.jpg);
       background-size: cover;
     }
 
@@ -368,7 +367,7 @@
     }
 
     #section3 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/winee.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/vino.jpg);
       background-size: cover;
     }
 
@@ -388,7 +387,7 @@
       font-size: 30px;
       width: 80%;
       padding-left: 10%;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: white;
       top: 30%;
       line-height: 1.5;
@@ -399,7 +398,7 @@
       width: 80%;
       padding-left: 10%;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: white;
     }
 
@@ -409,7 +408,7 @@
       padding-left: 10%;
       padding-bottom: 60px;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: white;
     }
 
@@ -417,7 +416,7 @@
       font-size: 18px;
       width: 100%;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: black;
     }
 
@@ -425,7 +424,7 @@
       font-size: 30px;
       width: 100%;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: black;
       padding-top: 10px;
       margin-top: 15px;
@@ -435,7 +434,7 @@
       font-size: 24px;
       width: 100%;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: black;
     }
 
@@ -444,7 +443,7 @@
       width: 70%;
       padding-left: 15%;
       float: center;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: Black;
     }
 
@@ -453,7 +452,7 @@
       width: 60%;
       padding-left: 20%;
       padding-top: 5%;
-      font-family: 'Roboto';
+      font-family: customFont;
       color: Black;
       text-align: center;
       margin-bottom: 10px;
@@ -633,14 +632,14 @@
 
         <a href="#coffe">KÁVA</a>
         <a href="#wine">VÍNO</a>
-        <a href="#cakes">DORTY</a>
+        <a href="#bread">PEČIVO</a>
         <a href="#ice">ZMRZLINA</a>
         <a href="#kontakt">KONTAKT</a>
 
 
         <div class="social">
-          <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-          <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+          <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+          <a href='https://www.facebook.com/deliengine/'><img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
         </div>
 
       </div>
@@ -682,8 +681,8 @@
         <a href="#wine">
           <li>VÍNO</li>
         </a>
-        <a href="#cakes">
-          <li>DORTY</li>
+        <a href="#bread">
+          <li>PEČIVO</li>
         </a>
         <a href="#ice">
           <li>ZMRZLINA</li>
@@ -691,8 +690,8 @@
         <a href="#kontakt">
           <li>KONTAKT</li>
         </a>
-        <img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-        <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+        <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+        <a href='https://www.facebook.com/deliengine/'><img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
       </ul>
     </div>
   </nav>
@@ -704,73 +703,77 @@
     <div class="section" id="section0" data-anchor="home">
 
 
+      <h2>Vítejte v DeliEngine</h2>
+      <div class='secText'>Omezená otevírací doba od 9 do 15 h, po - pá</div>
+
+
+
 
 
     </div>
 
-
-
-
-  </div>
-
-  <div class="section" id="section1" data-anchor="about">
-    <h2>O nás</h2>
-    <div class="secText">Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je
-      naše motto.
-      </br>Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
-      V naší pekárně pro vás připravujeme jak sladké, tak slané. Ale vždy čerstvé.</div>
-  </div>
-
-
-
-  <div class="section" id="section2" data-anchor="coffe">
-    <h2>Káva</h2>
-    <div class="secText">
-      Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
-      kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
-      Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
-      kávu za sníženou cenu!
+    <div class="section" id="section1" data-anchor="about">
+      <h2>O nás</h2>
+      <div class="secText">Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je
+        naše motto.
+        </br>Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
+        V naší pekárně pro vás připravujeme jak sladké, tak slané. Ale vždy čerstvé.</div>
     </div>
-  </div>
 
-  <div class="section" id="section3" data-anchor="wine">
-    <h2>Víno</h2>
-    <div class="secText">
-      Připravujeme spolupráci s vybranými
-      českými vinaři.
-    </div>
-  </div>
-  <div class="section" id="section4" data-anchor="cakes">
-    <h2>Dorty</h2>
-    <div class="secText">
-      Připravíme pro vás ty nejlepší domácí dorty na míru ve spolupráci s lokálními cukráři.
-    </div>
-  </div>
 
-  <div class="section" id="section5" data-anchor="ice">
-    <h2>Zmrzlina</h2>
-    <div class="secText">
-      Máme pro vás tu nejlepší domácí zmrzlinu ve spolupráci s lokálními cukráři.
-    </div>
-  </div>
 
-  <div class="section" id="section6" data-anchor="kontakt">
-    <div class="leftKontakt">
-      <div class="locationText">Walterovo náměstí 985/6, 158 00 Praha 5</div>
-      <div class="mapouter" style="width: 80%; padding-left:10%; ">
-        <div class="gmap_canvas"><iframe width="80%" height="200px" id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+    <div class="section" id="section2" data-anchor="coffe">
+      <h2>Káva - Mama Coffee</h2>
+      <div class="secText">
+        Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
+        kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
+        Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
+        kávu za sníženou cenu!
       </div>
     </div>
-    <div class="rightKontakt">
-      <div class="kontaktText"></br>
-        Kontakt</br> info@deliengine.cz</br>+420 603 255 554
+
+    <div class="section" id="section3" data-anchor="wine">
+      <h2>Víno - Vinařství Zapletal - vína z Velkých Bílovic</h2>
+      <div class="secText">
+        Rodinná firma Vinařství Zapletal vznikla v roce 1994, ale její činnost navazuje na rodinnou tradici a datuje se
+        až k počátkům 19. století. Důkazem tohoto je historický lis na hrozny z roku 1818, který je stále majetkem
+        rodiny a je dominantou vinného sklepa.
       </div>
-      <img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-      <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
     </div>
-  </div>
+    <div class="section" id="section4" data-anchor="cakes">
+      <h2>PEČIVO</h2>
+      <div class="secText">
+        Připravujeme pro vás domácí pečivo.
+      </div>
+    </div>
+
+    <div class="section" id="section5" data-anchor="ice">
+      <h2>Zmrzlina</h2>
+      <div class="secText">
+        Máme pro vás tu nejlepší domácí zmrzlinu ve spolupráci s lokálními cukráři.
+      </div>
+    </div>
+
+    <div class="section" id="section6" data-anchor="kontakt">
+      <div class="leftKontakt">
+        <div class="locationText">Omezená otevírací doba od 9 do 15 h, po - pá <br> <br>Walterovo náměstí 985/6, 158 00
+          Praha 5</div>
+        <div class="mapouter" style="width: 80%; padding-left:10%; ">
+          <div class="gmap_canvas"><iframe width="80%" height="200px" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+        </div>
+      </div>
+      <div class="rightKontakt">
+        <div class="kontaktText"></br>
+          Kontakt</br> info@deliengine.cz</br>+420 604 931 576
+        </div>
+        <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="ig"
+            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+        <a href='https://www.facebook.com/deliengine/'> <img class="fb"
+            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
+      </div>
+    </div>
 
   </div>
 
