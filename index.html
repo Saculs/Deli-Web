@@ -1,185 +1,179 @@
-﻿ <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 <head>
-<title>DeliEngine</title>
+  <title>DeliEngine</title>
 
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha256-47ID+V2VWUtAdqO9l5GlnnbwqLCUtputV73sG/rBZ3k=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha256-l0tJvh77claYa8GowKaFNxtuRWZICtwHTk7+0tgsiZY=" crossorigin="anonymous" />
- 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white','white'],
-                paddingTop: '60px',
-                anchors:['home','about', 'coffe','wine','cakes','ice','kontakt']
-            });
-        });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"
+    integrity="sha256-47ID+V2VWUtAdqO9l5GlnnbwqLCUtputV73sG/rBZ3k=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    integrity="sha256-l0tJvh77claYa8GowKaFNxtuRWZICtwHTk7+0tgsiZY=" crossorigin="anonymous" />
 
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <style>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white', 'white'],
+        paddingTop: '60px',
+        anchors: ['home', 'about', 'coffe', 'wine', 'cakes', 'ice', 'kontakt']
+      });
+    });
+  </script>
 
-    #menuToggle
-{
-  display: block;
-  position: fixed;
-  top: 35px;
-  right: 40px;
-  
-  z-index: 95;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
+  <style>
+    #menuToggle {
+      display: block;
+      position: fixed;
+      top: 35px;
+      right: 40px;
 
-#menuToggle a:hover
-{
-  color:#679436;
-}
+      z-index: 95;
+
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #menuToggle a {
+      text-decoration: none;
+      color: #232323;
+
+      transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+      color: #679436;
+    }
 
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
+    #menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
 
-/*
+      cursor: pointer;
+
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
+
+      -webkit-touch-callout: none;
+    }
+
+    /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
+    #menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
+      background: #cdcdcd;
+      border-radius: 3px;
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
+      z-index: 1;
 
-/* 
+      transform-origin: 4px 0px;
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    /* 
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
+    #menuToggle input:checked~span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
 
-/*
+    /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+    #menuToggle input:checked~span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
 
-/*
+    /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
+    #menuToggle input:checked~span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
 
-/*
+    /*
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
-  position: absolute;
-  width: 700%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  font-family: customFont;
+    #menu {
+      position: absolute;
+      width: 700%;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      font-family: 'Roboto';
 
-  height:10000%;
-  
-  background: white;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
+      height: 10000%;
 
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}   
+      background: white;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
 
-/*
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+
+    /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
-  transform:  translate(-60%, 0);
-}
+    #menuToggle input:checked~ul {
+      transform: translate(-60%, 0);
+    }
 
 
 
-#info p{
-  width: 50%;
-}
+    #info p {
+      width: 50%;
+    }
 
 
 
@@ -207,508 +201,580 @@
 
 
     header {
- width: 100%;
- background-color: white;
- position: fixed;
- height: 110px;
- top: 0;
- z-index: 99;
-}
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      height: 110px;
+      top: 0;
+      z-index: 99;
+    }
+
     .topBar {
- width: 100%;
- background-color: white;
- position: fixed;
- height: 80px;
- top: 0;
- z-index: 90;
-}
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      height: 80px;
+      top: 0;
+      z-index: 90;
+    }
 
-.topnav{
-margin-top:5px;
-margin-bottom:20px;
-}
+    .topnav {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
 
-.mainmenu {
-    padding-top: 30px;
-    font-family: customFont;
-    top: 50%;
-    text-align: center;
-}
+    .mainmenu {
+      padding-top: 30px;
+      font-family: 'Roboto';
+      top: 50%;
+      text-align: center;
+    }
 
-.logo {
-    padding-left: 60px;
-    max-width: 100%;
-    max-height: 100%;
-    float: left;
-    width: 100px;
-    padding-top: 5px;
-}
-.logoMob {
-   align: center;
-   top: 0;
-   left: 50%;
-    transform: translate(-50%, 10%);
-    max-width: 100%;
-    max-height: 100%;
-    float: center;
-    width: 70px;
-    padding-top: 5px;
-    position:absolute;
-     z-index: 99;
-}
+    .logo {
+      padding-left: 60px;
+      max-width: 100%;
+      max-height: 100%;
+      float: left;
+      width: 100px;
+      padding-top: 5px;
+    }
 
-.insta {
-padding-left: 40px;
-    max-width: 100%;
-    max-height: 100%;
-    float: right;
-    width: 30px;
-    vertical-align: middle;
-}
-.faceb {
-    padding-left: 12px;
-    max-width: 100%;
-    max-height: 100%;
-    float:right;
-    height: 30px;
-    vertical-align: middle;
-    top:50%;
-}
+    .logoMob {
+      align: center;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 10%);
+      max-width: 100%;
+      max-height: 100%;
+      float: center;
+      width: 70px;
+      padding-top: 5px;
+      position: absolute;
+      z-index: 99;
+    }
 
-.ig {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    max-width: 100%;
-    max-height: 100%;
+    .insta {
+      padding-left: 40px;
+      max-width: 100%;
+      max-height: 100%;
+      float: right;
+      width: 30px;
+      vertical-align: middle;
+    }
 
-    width: 30px;
-    vertical-align: middle;
-}
-.fb {
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-bottom: 20px;
-    max-width: 100%;
-    max-height: 100%;
+    .faceb {
+      padding-left: 12px;
+      max-width: 100%;
+      max-height: 100%;
+      float: right;
+      height: 30px;
+      vertical-align: middle;
+      top: 50%;
+    }
 
-    height: 30px;
-    vertical-align: middle;
-    top:50%;
-}
+    .ig {
+      padding-top: 25px;
+      padding-bottom: 20px;
+      max-width: 100%;
+      max-height: 100%;
 
+      width: 30px;
+      vertical-align: middle;
+    }
 
+    .fb {
+      padding-top: 25px;
+      padding-left: 25px;
+      padding-bottom: 20px;
+      max-width: 100%;
+      max-height: 100%;
 
-.social {
-    padding-right: 60px;
-    max-width: 100%;
-    max-height: 100%;
-    float:right;
-    height: 50px;
-}
-
-.topnav-right {
-float:right;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-
-  color: #7a7a7a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  /*background-color: #ddd;*/
-  color: #679436;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: black;
-}
+      height: 30px;
+      vertical-align: middle;
+      top: 50%;
+    }
 
 
-        
-        @font-face {
-  font-family: customFont;
-  src: url(Gotham-Book/Gotham-Book.woff);
-}   
 
-        body{
-        margin:0;
-        padding:0;
-        background-color: white;
-		}
+    .social {
+      padding-right: 60px;
+      max-width: 100%;
+      max-height: 100%;
+      float: right;
+      height: 50px;
+    }
 
-        .section{
-            margin:0;
-        padding:0;
-            text-align: center;
-            background-size: cover;
-            background-color: whitesmoke;
-        }
+    .topnav-right {
+      float: right;
+    }
 
-        #section0{
-        
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte.jpg);
-        background-size: cover;
-		}
-        #section1{
-        
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte2.jpg);
-        background-size: cover;
-		}
+    /* Style the links inside the navigation bar */
+    .topnav a {
 
-        #section2{
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/coffe.jpg);
-        background-size: cover;
-		}
-        #section3{
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/winee.jpg);
-        background-size: cover;
-		}
-        #section4{
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/cakes.jpg);
-        background-size: cover;
-		}
-        #section5{
-        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(http://deliengine.cz/images/ice.jpg);
-        background-size: cover;
-		}
-        #section6{
-		}
+      color: #7a7a7a;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
 
-        .secText{
-      font-size: 30px; width:80%;padding-left:10%;  
-      font-family: customFont; color:white;
-      top:30%;
-      line-height: 1.5;
-		}
+    }
 
-        h2{
-      font-size: 35px; width:80%;padding-left:10%; float:center; 
-      font-family: customFont; color:white;
-		}
-         h1{
-      font-size: 45px; width:80%;padding-left:10%; padding-bottom:60px;float:center; 
-      font-family: customFont; color:white;
-		}
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      /*background-color: #ddd;*/
+      color: #679436;
+    }
 
-        .registrText{
-      font-size: 18px;width:100%;  float:center; 
-      font-family: customFont; color:black;
-		}
-         .registrTextt{
-      font-size:30px; width:100%; float:center; 
-      font-family: customFont; color:black; padding-top: 10px; margin-top: 15px;
-		}
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      color: black;
+    }
 
-        .registrTop{
-      font-size: 24px; width:100%; float:center; 
-      font-family: customFont; color:black;
-		}
 
-        .kontaktText{
-      font-size: 30px; width:70%;padding-left:15%; float:center; 
-      font-family: customFont; color:Black;
-		}
 
-        .locationText{
-      font-size: 30px; width:60%; padding-left:20%; padding-top:5%; 
-      font-family: customFont; color:Black; text-align: center; margin-bottom:10px;
-		}
+    @font-face {
+      src: url(Gotham-Book/Gotham-Book.woff);
+    }
 
-        .banner{
-            margin-top:40px;
-            background-color: white;
-            margin-bottom:20px;
-            padding-bottom: 20px;
-            padding-top:0;
-            position: fixed;
-            bottom: 5%;
-            width:100%;
-        }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
 
-        input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-    font-size: 24px;
-    padding-top:5px;
-}
+    .section {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-size: cover;
+      background-color: whitesmoke;
+    }
 
-input[type=email] {
-    font-size: 24px;
-}
+    #section0 {
 
-@media screen and (min-width: 1000px) {
-        h2{
-            font-size:35px;
-        }
-        .secText{
-          font-size: 30px;
-        }
-        .registrText{
-            font-size: 20px;
-		}
-         .registrTextt{
-            font-size:20px; 
-		}
-        .registrTop{
-            font-size: 20px;
-		}
-        input[type=submit] {
-            font-size: 24px;
-        }
-        input[type=email] {
-            font-size: 24px;
-        }
-       .mobileNav{
-       display:none;
-       height:0;
-       }
-       .logoMob{
-       display:none;
-       height:0;
-	   }
-}
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte.jpg);
+      background-size: cover;
+    }
 
-@media screen and (max-width: 1000px) {
-        .topnavH{
-      display:none;  
-      height:0;
-		}
-}
+    #section1 {
 
-@media screen and (max-width: 600px) {
-        .topnavH{
-      display:none;  
-      height:0;
-		}
-        
-        h2{
-            font-size:25px;
-        }
-         h1{
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte2.jpg);
+      background-size: cover;
+    }
+
+    #section2 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/coffe.jpg);
+      background-size: cover;
+    }
+
+    #section3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/winee.jpg);
+      background-size: cover;
+    }
+
+    #section4 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/cakes.jpg);
+      background-size: cover;
+    }
+
+    #section5 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/ice.jpg);
+      background-size: cover;
+    }
+
+    #section6 {}
+
+    .secText {
       font-size: 30px;
-		}
-        .secText{
-          font-size: 20px;
-        }
-       .registrText{
-            font-size: 12px;
-		}
-         .registrTextt{
-      font-size:12px; 
-		}
-        .registrTop{
-      font-size: 12px;
-		}
+      width: 80%;
+      padding-left: 10%;
+      font-family: 'Roboto';
+      color: white;
+      top: 30%;
+      line-height: 1.5;
+    }
 
-        input[type=submit] {
-            font-size: 12px;
-        }
+    h2 {
+      font-size: 35px;
+      width: 80%;
+      padding-left: 10%;
+      float: center;
+      font-family: 'Roboto';
+      color: white;
+    }
 
-        input[type=email] {
-            font-size: 12px;
-        }
-}
+    h1 {
+      font-size: 45px;
+      width: 80%;
+      padding-left: 10%;
+      padding-bottom: 60px;
+      float: center;
+      font-family: 'Roboto';
+      color: white;
+    }
 
-@media screen and (max-width: 380px) {
-h2{
-    font-size:20px;
-}
- h1{
-      font-size: 25px;
-		}
-        .secText{
-          font-size: 16px;
-        }
-        .registrText{
-            font-size: 12px;
-		}
-         .registrTextt{
-            font-size:12px; 
-		}
-        .registrTop{
-            font-size: 12px;
-		}
-        input[type=submit] {
-            font-size: 12px;
-        }
-        input[type=email] {
-            font-size: 12px;
-        }
+    .registrText {
+      font-size: 18px;
+      width: 100%;
+      float: center;
+      font-family: 'Roboto';
+      color: black;
+    }
 
-        .kontaktText{
-      font-size: 14px; 
-		}
-        .locationText{
-      font-size: 14px; 
-		}
-        .logoMob {
+    .registrTextt {
+      font-size: 30px;
+      width: 100%;
+      float: center;
+      font-family: 'Roboto';
+      color: black;
+      padding-top: 10px;
+      margin-top: 15px;
+    }
 
-    width: 65px;
+    .registrTop {
+      font-size: 24px;
+      width: 100%;
+      float: center;
+      font-family: 'Roboto';
+      color: black;
+    }
 
-}
-}
+    .kontaktText {
+      font-size: 30px;
+      width: 70%;
+      padding-left: 15%;
+      float: center;
+      font-family: 'Roboto';
+      color: Black;
+    }
 
-    </style>
+    .locationText {
+      font-size: 30px;
+      width: 60%;
+      padding-left: 20%;
+      padding-top: 5%;
+      font-family: 'Roboto';
+      color: Black;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      margin-top: 40px;
+      background-color: white;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      padding-top: 0;
+      position: fixed;
+      bottom: 5%;
+      width: 100%;
+    }
+
+    input[type=submit] {
+      padding: 5px 15px;
+      background: #ccc;
+      border: 0 none;
+      cursor: pointer;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 24px;
+      padding-top: 5px;
+    }
+
+    input[type=email] {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      h2 {
+        font-size: 35px;
+      }
+
+      .secText {
+        font-size: 30px;
+      }
+
+      .registrText {
+        font-size: 20px;
+      }
+
+      .registrTextt {
+        font-size: 20px;
+      }
+
+      .registrTop {
+        font-size: 20px;
+      }
+
+      input[type=submit] {
+        font-size: 24px;
+      }
+
+      input[type=email] {
+        font-size: 24px;
+      }
+
+      .mobileNav {
+        display: none;
+        height: 0;
+      }
+
+      .logoMob {
+        display: none;
+        height: 0;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .topnavH {
+        display: none;
+        height: 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnavH {
+        display: none;
+        height: 0;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .secText {
+        font-size: 20px;
+      }
+
+      .registrText {
+        font-size: 12px;
+      }
+
+      .registrTextt {
+        font-size: 12px;
+      }
+
+      .registrTop {
+        font-size: 12px;
+      }
+
+      input[type=submit] {
+        font-size: 12px;
+      }
+
+      input[type=email] {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 380px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .secText {
+        font-size: 16px;
+      }
+
+      .registrText {
+        font-size: 12px;
+      }
+
+      .registrTextt {
+        font-size: 12px;
+      }
+
+      .registrTop {
+        font-size: 12px;
+      }
+
+      input[type=submit] {
+        font-size: 12px;
+      }
+
+      input[type=email] {
+        font-size: 12px;
+      }
+
+      .kontaktText {
+        font-size: 14px;
+      }
+
+      .locationText {
+        font-size: 14px;
+      }
+
+      .logoMob {
+
+        width: 65px;
+
+      }
+    }
+  </style>
 </head>
- 
+
 <body>
-      <header class="topnavH">
+  <header class="topnavH">
     <div class="topnav">
-    <a href="#home">
-            <img class="logo" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png">
-            </a>
-        
-            <div class = "mainmenu">
-            <a href="#about">O NÁS</a> 
+      <a href="#home">
+        <img class="logo" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png">
+      </a>
 
-            <a href="#coffe">KÁVA</a>
-            <a href="#wine">VÍNO</a>
-            <a href="#cakes">DORTY</a>
-            <a href="#ice">ZMRZLINA</a>
-            <a href="#kontakt">KONTAKT</a>
+      <div class="mainmenu">
+        <a href="#about">O NÁS</a>
+
+        <a href="#coffe">KÁVA</a>
+        <a href="#wine">VÍNO</a>
+        <a href="#cakes">DORTY</a>
+        <a href="#ice">ZMRZLINA</a>
+        <a href="#kontakt">KONTAKT</a>
 
 
-            <div class="social">
-            <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-            <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
-            </div>
+        <div class="social">
+          <img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
+          <img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+        </div>
 
-            </div>
+      </div>
 
-            
+
     </div>
 
-    </header> 
+  </header>
 
-    <nav role="navigation" class="mobileNav">
-  <div id="menuToggle">
-    <!--
+  <nav role="navigation" class="mobileNav">
+    <div id="menuToggle">
+      <!--
     A fake / hidden checkbox is used as click reciever,
     so you can use the :checked selector on it.
     -->
-    <input type="checkbox" />
-    
-    <!--
+      <input type="checkbox" />
+
+      <!--
     Some spans to act as a hamburger.
     
     They are acting like a real hamburger,
     not that McDonalds stuff.
     -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
     Too bad the menu has to be inside of the button
     but hey, it's pure CSS magic.
     -->
-    <ul id="menu">
-      <a href="#about"><li>O NÁS</li></a>
-      <a href="#coffe"><li>KÁVA</li></a>
-      <a href="#wine"><li>VÍNO</li></a>
-      <a href="#cakes"><li>DORTY</li></a>
-      <a href="#ice"><li>ZMRZLINA</li></a>
-      <a href="#kontakt"><li>KONTAKT</li></a>
+      <ul id="menu">
+        <a href="#about">
+          <li>O NÁS</li>
+        </a>
+        <a href="#coffe">
+          <li>KÁVA</li>
+        </a>
+        <a href="#wine">
+          <li>VÍNO</li>
+        </a>
+        <a href="#cakes">
+          <li>DORTY</li>
+        </a>
+        <a href="#ice">
+          <li>ZMRZLINA</li>
+        </a>
+        <a href="#kontakt">
+          <li>KONTAKT</li>
+        </a>
         <img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-            <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
-    </ul>
-  </div>
-</nav>
-<a href="#home">
- <img class="logoMob" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png"><div class="topBar"></div>
- </a>
-    <div id="fullpage">
-        <div class="section" id="section0" data-anchor="home">
-        
-        <h1>Startujeme v září 2020</h2>
-
-
-<div class ="banner"> 
- <div class="registrTextt">Registrujte se a těšte na množství výhod  </div>
-<div class="registrText">
-<div class="email-form" style="text-align: center; margin-top:10px;">
-  <label for="email_input" class="registrTop">Jako první budete vědět o voňavých novinkách a dalších bonusech</br></label>
-  <div style="height:10px;"></div>
-<input type="email" name="email" id="email_input" placeholder="Váš E-mail">
-<input type="submit" class="send" value="Registrovat">
-  </div>
-</div>
-</div>
+        <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+      </ul>
+    </div>
+  </nav>
+  <a href="#home">
+    <img class="logoMob" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/logo.png">
+    <div class="topBar"></div>
+  </a>
+  <div id="fullpage">
+    <div class="section" id="section0" data-anchor="home">
 
 
 
-
-</div>
-
- <div class="section" id="section1" data-anchor="about">
- <h2 >O nás</h2>
-        <div class="secText">Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je naše motto.
-        </br>Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
-V naší pekárně pro vás připravujeme jak sladké, tak slané. Ale vždy čerstvé.</div>
- </div>
-
-
-
-        <div class="section" id="section2" data-anchor="coffe">
-        <h2 >Káva</h2>
-            <div class="secText">
-            Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
-kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
-Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
-kávu za sníženou cenu!
-            </div>
-        </div>
-
-        <div class="section" id="section3" data-anchor="wine">
-        <h2 >Víno</h2>
-        <div class="secText">
-            Připravujeme spolupráci s vybranými
-českými vinaři.
-            </div>
-            </div>
-        <div class="section" id="section4" data-anchor="cakes">
-        <h2>Dorty</h2>
-        <div class="secText">
-           Připravíme pro vás ty nejlepší domácí dorty na míru ve spolupráci s lokálními cukráři.
-            </div>
-        </div>
-
-            <div class="section" id="section5" data-anchor="ice">
-            <h2>Zmrzlina</h2>
-            <div class="secText">
-               Máme pro vás tu nejlepší domácí zmrzlinu ve spolupráci s lokálními cukráři.
-                </div>
-            </div>
-        
-        <div class="section" id="section6" data-anchor="kontakt">
-            <div class="leftKontakt">
-            <div class="locationText">Walterovo náměstí 985/6, 158 00 Praha 5</div>
-            <div class="mapouter" style="width: 80%; padding-left:10%; "><div class="gmap_canvas"><iframe width="80%" height="200px" id="gmap_canvas" src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
-            </div>
-            <div class="rightKontakt">
-            <div class="kontaktText"></br>
-            Kontakt</br> info@deliengine.cz</br>+420 603 255 554
-</div>
-<img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
-            <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
-</div>
-        </div>
 
     </div>
 
-    
+
+
+
+  </div>
+
+  <div class="section" id="section1" data-anchor="about">
+    <h2>O nás</h2>
+    <div class="secText">Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je
+      naše motto.
+      </br>Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
+      V naší pekárně pro vás připravujeme jak sladké, tak slané. Ale vždy čerstvé.</div>
+  </div>
+
+
+
+  <div class="section" id="section2" data-anchor="coffe">
+    <h2>Káva</h2>
+    <div class="secText">
+      Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
+      kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
+      Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
+      kávu za sníženou cenu!
+    </div>
+  </div>
+
+  <div class="section" id="section3" data-anchor="wine">
+    <h2>Víno</h2>
+    <div class="secText">
+      Připravujeme spolupráci s vybranými
+      českými vinaři.
+    </div>
+  </div>
+  <div class="section" id="section4" data-anchor="cakes">
+    <h2>Dorty</h2>
+    <div class="secText">
+      Připravíme pro vás ty nejlepší domácí dorty na míru ve spolupráci s lokálními cukráři.
+    </div>
+  </div>
+
+  <div class="section" id="section5" data-anchor="ice">
+    <h2>Zmrzlina</h2>
+    <div class="secText">
+      Máme pro vás tu nejlepší domácí zmrzlinu ve spolupráci s lokálními cukráři.
+    </div>
+  </div>
+
+  <div class="section" id="section6" data-anchor="kontakt">
+    <div class="leftKontakt">
+      <div class="locationText">Walterovo náměstí 985/6, 158 00 Praha 5</div>
+      <div class="mapouter" style="width: 80%; padding-left:10%; ">
+        <div class="gmap_canvas"><iframe width="80%" height="200px" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+      </div>
+    </div>
+    <div class="rightKontakt">
+      <div class="kontaktText"></br>
+        Kontakt</br> info@deliengine.cz</br>+420 603 255 554
+      </div>
+      <img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png">
+      <img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png">
+    </div>
+  </div>
+
+  </div>
+
+
 </body>
+
 </html>
