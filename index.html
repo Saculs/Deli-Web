@@ -19,13 +19,15 @@
     integrity="sha256-47ID+V2VWUtAdqO9l5GlnnbwqLCUtputV73sG/rBZ3k=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
     integrity="sha256-l0tJvh77claYa8GowKaFNxtuRWZICtwHTk7+0tgsiZY=" crossorigin="anonymous" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
   <script type="text/javascript">
     $(document).ready(function () {
       $('#fullpage').fullpage({
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white'],
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', '#679436'],
         paddingTop: '60px',
         anchors: ['home', 'about', 'coffe', 'wine', 'bread', 'kontakt']
       });
@@ -35,6 +37,61 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <style>
+    .grid {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img-1 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/mamacoffe.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+    .img-2 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/biofarma.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .img-3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/fatbrothers.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+    .img-4 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/pivovar.jpg);
+      background-size: cover;
+
+      background-position: center;
+    }
+
+    .img-5 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/tadypekarna.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+    .img-6 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/dobroty.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+    .img-7 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/ravioli.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+    .img-8 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/vinko.jpg);
+      background-size: cover;
+      background-position: center
+    }
+
+
     #menuToggle {
       display: block;
       position: fixed;
@@ -50,7 +107,7 @@
     #menuToggle a {
       text-decoration: none;
       color: #232323;
-
+      font-weight: 500;
       transition: color 0.3s ease;
     }
 
@@ -226,6 +283,8 @@
     .mainmenu {
       padding-top: 30px;
       font-family: 'Roboto';
+      font-weight: 500;
+
       top: 50%;
       text-align: center;
     }
@@ -311,11 +370,11 @@
     /* Style the links inside the navigation bar */
     .topnav a {
 
-      color: #7a7a7a;
+      color: #000000;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 26px;
 
     }
 
@@ -352,35 +411,59 @@
 
     #section1 {
 
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/DeliInte2.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/onastrubicky.jpg);
       background-size: cover;
     }
 
     #section2 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/coffe.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/monikapece.jpg);
       background-size: cover;
     }
 
     #section3 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/vino.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/Menubg.jpg);
       background-size: cover;
+
     }
 
-    #section4 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://deliengine.cz/images/cakes.jpg);
-      background-size: cover;
+    #section4 {}
+
+    #section5 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      background-color: #679436;
+      padding-top: 0;
+      margin-top: 0;
     }
 
     #section6 {}
 
+    #gmap_canvas {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+    }
+
     .secText {
+      font-size: 200px;
+      width: 80%;
+      padding-left: 10%;
+      font-family: 'Roboto';
+      font-weight: 400;
+      color: white;
+      top: 30%;
+      line-height: 1.5;
+    }
+    .gridText {
       font-size: 30px;
       width: 80%;
       padding-left: 10%;
       font-family: 'Roboto';
+      font-weight: 300;
       color: white;
-      top: 30%;
+      padding-top: 0;
       line-height: 1.5;
+      text-align: center;
     }
 
     h2 {
@@ -390,7 +473,7 @@
       float: center;
       font-family: 'Roboto';
       color: white;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     h1 {
@@ -435,16 +518,15 @@
       padding-left: 15%;
       float: center;
       font-family: 'Roboto';
-      color: Black;
+      color: white;
     }
 
     .locationText {
       font-size: 30px;
       width: 60%;
       padding-left: 20%;
-      padding-top: 5%;
       font-family: 'Roboto';
-      color: Black;
+      color: white;
       text-align: center;
       margin-bottom: 10px;
     }
@@ -481,7 +563,7 @@
       }
 
       .secText {
-        font-size: 30px;
+        font-size: 45px;
       }
 
       .registrText {
@@ -621,15 +703,17 @@
       <div class="mainmenu">
         <a href="#about">O NÁS</a>
 
-        <a href="#coffe">KÁVA</a>
-        <a href="#wine">VÍNO</a>
-        <a href="#bread">PEČIVO</a>
+        <a href="#coffe">PEČEME</a>
+        <a href="#wine">MENU</a>
+        <a href="#bread">DOPLŇKOVÝ PRODEJ</a>
         <a href="#kontakt">KONTAKT</a>
 
 
         <div class="social">
-          <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="insta" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
-          <a href='https://www.facebook.com/deliengine/'><img class="faceb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
+          <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="insta"
+              src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+          <a href='https://www.facebook.com/deliengine/'><img class="faceb"
+              src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
         </div>
 
       </div>
@@ -666,19 +750,21 @@
           <li>O NÁS</li>
         </a>
         <a href="#coffe">
-          <li>KÁVA</li>
+          <li>PEČEME</li>
         </a>
         <a href="#wine">
-          <li>VÍNO</li>
+          <li>MENU</li>
         </a>
         <a href="#bread">
-          <li>PEČIVO</li>
+          <li>DOPLŇKOVÝ PRODEJ</li>
         </a>
         <a href="#kontakt">
           <li>KONTAKT</li>
         </a>
-        <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="ig" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
-        <a href='https://www.facebook.com/deliengine/'><img class="fb" src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
+        <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="ig"
+            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+        <a href='https://www.facebook.com/deliengine/'><img class="fb"
+            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
       </ul>
     </div>
   </nav>
@@ -690,8 +776,8 @@
     <div class="section" id="section0" data-anchor="home">
 
 
-      <h2>Vítejte v Deli Engine</h2>
-      <div class='secText'>Máme otevřeno!<br>Každý všední den od 9 do 15 h</div>
+      <h1>VÍTEJTE V DELI ENGINE.<br>MÁME OTEVŘENO.</h1>
+      <div class='secText'></div>
 
 
 
@@ -700,7 +786,7 @@
     </div>
 
     <div class="section" id="section1" data-anchor="about">
-      <h2>O nás</h2>
+      <!--<h2>O nás</h2>-->
       <div class="secText">Tradiční hodnoty spolu s čerstvými surovinami a důrazem na ochranu životního prostředí, to je
         naše motto.
         </br>Přinášíme vám to nejlepší od lokálních dodavatelů ve spojení s požadavky na tempo dnešní doby.
@@ -710,49 +796,106 @@
 
 
     <div class="section" id="section2" data-anchor="coffe">
-      <h2>Káva - Mama Coffee</h2>
+
       <div class="secText">
-        Můžete se těšit na kvalitní kávu z lokální české pražírny té nejlepší
-        kvality. Dbáme na morální zásady obchodu v souladu s filozofií fair trade.</br>
-        Pomozte nám chránit životní prostředí a přineste si vlastní hrneček na
-        kávu za sníženou cenu!
+        Srdce bije. Pec peče.
+        Seznamte se s naší Monikou, která se stará o to,
+        aby bylo čerstvě napečeno vždy po celý den.
       </div>
     </div>
 
     <div class="section" id="section3" data-anchor="wine">
-      <h2>Víno - Vinařství Zapletal - vína z Velkých Bílovic</h2>
-      <div class="secText">
-        Rodinná firma Vinařství Zapletal vznikla v roce 1994, ale její činnost navazuje na rodinnou tradici a datuje se
-        až k počátkům 19. století. Důkazem tohoto je historický lis na hrozny z roku 1818, který je stále majetkem
-        rodiny a je dominantou vinného sklepa.
+      <div class='menuText' style='width: 100%;'>
+        <div id="1menu-cl" style='float:left; height:100%; width:33.33%;'>
+          text
+        </div>
+        <div id="2menu-cl" style='float:left; height:100%; width:33.33%;'>
+        Text
+        </div>
+        <div id="3menu-cl" style='float:right; height:100%; width:33.33%;'>
+        Text
+        </div>
+        <h3></h3>
+
+
       </div>
+
     </div>
-    
+
     <div class="section" id="section4" data-anchor="cakes">
-      <h2>Pečivo</h2>
-      <div class="secText">
-        Připravujeme pro vás domácí pečivo.
+      <div class="grid">
+        <div class="img-1" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>MAMA COFFEE</h2>
+          <div class='gridText'>Kvalitní fair trade kávu
+            si můžete připravit i doma.</div>
+        </div>
+
+        <div class="img-2" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>BIO FARMA VAVŘINEC</h2>
+          <div class='gridText'>Mléko, sýry a další mléčné
+            výrobky z bio farmy na doma.</div>
+        </div>
+
+        <div class="img-3" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>FAT BROTHERS</h2>
+          <div class='gridText'>Ty nejchutnější delikatesy s
+            láskou vyrobené opravdovými
+            lidmi.</div>
+        </div>
+
+        <div class="img-4" style="width: 25%; height: 50%; float: right;">
+          <h2 style='padding-top: 30%;'>PIVOVAR OLEŠNÁ</h2>
+          <div class='gridText'>Pivní speciály, které potěší
+            českou dušičku.</div>
+        </div>
+
+
+
+        <div class="img-5" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>TADY A TEĎ PEKÁRNA</h2>
+          <div class='gridText'>Pořádný kváskoskový chléb
+            je u nás základ. Nyní i pro vás.</div>
+        </div>
+        <div class="img-6" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>DOBROTY S PŘÍBĚHEM</h2>
+          <div class='gridText'>Pochunejte si a podpořte
+            zaměstnance z chráněné dílny.</div>
+        </div>
+        <div class="img-7" style="width: 25%; height: 50%; float: left;">
+          <h2 style='padding-top: 30%;'>RAVIOLA PASTA</h2>
+          <div class='gridText'>Domácí pasta z BIO vajec
+            od itala z Horoměřic.</div>
+        </div>
+        <div class="img-8" style="width: 25%; height: 50%; float: right;">
+          <h2 style='padding-top: 30%;'>VINAŘSTVÍ ZAPLETAL</h2>
+          <div class='gridText'>Prémiová česká vína
+            z rodinného vinařství. </div>
+        </div>
+
       </div>
     </div>
 
     <div class="section" id="section5" data-anchor="kontakt">
       <div class="leftKontakt">
-        <div class="locationText">Máme otevřeno!<br>Každý všední den od 9 do 15 h<br> <br>Walterovo náměstí 985/6, 158 00
-          Praha 5</div>
-        <div class="mapouter" style="width: 80%; padding-left:10%; ">
-          <div class="gmap_canvas"><iframe width="80%" height="200px" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+        <h2 style='top:15%; position: absolute;'>Najdete nás na Waltrovce.</h2>
+        <div class="locationText">
+          Walterovo náměstí 985/6<br>158 00 Praha 5 <br>po - pá 9:00 - 15:00
         </div>
+
       </div>
       <div class="rightKontakt">
         <div class="kontaktText"></br>
           Kontakt</br> info@deliengine.cz</br>+420 605 931 576
         </div>
         <a href="https://www.instagram.com/deli_engine_waltrovka/"><img class="ig"
-            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/IG.png"></a>
+            src="photos/IG.png"></a>
         <a href='https://www.facebook.com/deliengine/'> <img class="fb"
-            src="https://raw.githubusercontent.com/Saculs/Deli-Web/master/images/fb.png"></a>
+            src="photos/fb.png"></a>
+      </div>
+      <div class="mapouter" style="width: 100%; position: absolute; bottom: -5px; ">
+        <div class="gmap_canvas"><iframe width="100%" height="200px" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
       </div>
     </div>
 
