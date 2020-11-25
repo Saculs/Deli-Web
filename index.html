@@ -29,7 +29,7 @@
       $('#fullpage').fullpage({
         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white', '#679436'],
         paddingTop: '40px',
-        anchors: ['home', 'about', 'peceme', 'menu', 'doplnkovy-prodej', 'kontakt']
+        anchors: ['home', 'about', 'peceme', 'dennimenu', 'doplnkovy-prodej', 'kontakt']
       });
     });
   </script>
@@ -41,13 +41,14 @@
       width: 100%;
       height: 100%;
       vertical-align: center;
-
+     padding-top: 30px;
     }
 
     .menuText {
       width: 100%;
       text-align: left;
       padding-left: 5%;
+      padding-top: 5%;
       margin-right: 5%;
       font-family: "Roboto";
       color: white;
@@ -626,6 +627,13 @@
       font-size: 24px;
     }
 
+    @media screen and (max-width: 1200px) {
+
+      .menuText {
+        font-size: 16px;
+      }
+    }
+
     @media screen and (max-width: 1000px) {
       h2 {
         font-size: 35px;
@@ -638,6 +646,8 @@
       .locationText {
         font-size: 25px;
       }
+
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -733,7 +743,12 @@
         font-size: 15px;
       }
 
+      .gridText {
+        font-size: 13px;
+        line-height: 1.1;
+        text-align: center;
 
+      }
 
       .img-1 {
         width: 50%;
@@ -799,9 +814,10 @@
       }
 
     }
-    @media screen and (max-width: 430px) {
+
+    @media screen and (max-width: 440px) {
       .menuText {
-        font-size: 11px;
+        font-size: 12px;
       }
 
       h3 {
@@ -866,8 +882,8 @@
       .menuText {
         font-size: 9px;
       }
-    
-      h3{
+
+      h3 {
         font-size: 13px;
       }
 
@@ -887,6 +903,7 @@
         line-height: 1.1;
         text-align: center;
       }
+
       h3 {
         font-size: 12px;
       }
@@ -911,7 +928,7 @@
         <a href="#about">O NÁS</a>
 
         <a href="#peceme">PEČEME</a>
-        <a href="#menu">MENU</a>
+        <a href="#dennimenu">MENU</a>
         <a href="#doplnkovy-prodej">DOPLŇKOVÝ PRODEJ</a>
         <a href="#kontakt">KONTAKT</a>
 
@@ -959,7 +976,7 @@
         <a href="#peceme">
           <li>PEČEME</li>
         </a>
-        <a href="#menu">
+        <a href="#dennimenu">
           <li>MENU</li>
         </a>
         <a href="#doplnkovy-prodej">
@@ -1174,7 +1191,6 @@
 
     <div class="section" id="section4" data-anchor="cakes">
       <!-- Doplnkovy Prodej Ctverce Zacatek -->
-      <div style="height:60px"></div>
       <div class="grid">
         <div class="img-1">
           <div class='gridText'>
@@ -1237,7 +1253,7 @@
       <div class="kontakt">
         <h2 style='top:15%; position: absolute; margin-bottom: 0;'>Najdete nás na Waltrovce.</h2>
         <div class="locationText" style='top:27%; position: absolute;'>
-          Walterovo náměstí 985/6<br>158 00 Praha 5 <br>po - pá 9:00 - 15:00
+          Walterovo náměstí 985/6<br>158 00 Praha 5 <br>po - pá 9:00 - 16:00
           <br><br>
           info@deliengine.cz</br>+420 605 931 576
           <br>
