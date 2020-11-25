@@ -27,7 +27,7 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $('#fullpage').fullpage({
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white','#679436'],
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white', '#679436'],
         paddingTop: '60px',
         anchors: ['home', 'about', 'coffe', 'wine', 'bread', 'kontakt']
       });
@@ -40,6 +40,17 @@
     .grid {
       width: 100%;
       height: 100%;
+      vertical-align: center;
+    }
+
+    .menuText {
+      width: 100%;
+      text-align: left;
+      padding-left: 5%;
+      font-family: "Roboto";
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
     }
 
     .menuHeader {
@@ -47,59 +58,77 @@
     }
 
     .img-1 {
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(0deg, rgba(87, 82, 82, 0.3), rgba(0, 0, 0, 0.3)), url(photos/mamacoffe.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-2 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/biofarma.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-3 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/fatbrothers.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-4 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/pivovar.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: right;
+      width: 25%;
+      height: 50%;
+      float: right;
     }
 
     .img-5 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/tadypekarna.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-6 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/dobroty.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-7 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/ravioli.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: left;
+      width: 25%;
+      height: 50%;
+      float: left;
     }
 
     .img-8 {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/vinko.jpg);
       background-size: cover;
       background-position: center;
-      width: 25%; height: 50%; float: right;
+      width: 25%;
+      height: 50%;
+      float: right;
     }
 
 
@@ -476,14 +505,19 @@
       font-size: 20px;
       width: 80%;
       padding-left: 10%;
+      padding-top: 0;
+      margin-top: 0;
       font-family: 'Roboto';
       font-weight: 300;
       color: white;
       padding-top: 0;
       padding-bottom: 0;
+      margin-bottom: 0;
       line-height: 1.5;
       text-align: center;
+      vertical-align: middle;
     }
+
     h3 {
       font-size: 28px;
       width: 80%;
@@ -492,6 +526,8 @@
       font-family: 'Roboto';
       color: white;
       font-weight: 500;
+      padding-bottom: 0;
+      margin-bottom: 5px;
     }
 
     h2 {
@@ -586,6 +622,7 @@
     input[type=email] {
       font-size: 24px;
     }
+
     @media screen and (max-width: 1000px) {
       h2 {
         font-size: 35px;
@@ -594,10 +631,12 @@
       .secText {
         font-size: 26px;
       }
+
       .locationText {
         font-size: 25px;
       }
     }
+
     @media screen and (min-width: 1000px) {
       h2 {
         font-size: 35px;
@@ -660,7 +699,7 @@
       }
 
       .secText {
-        font-size: 30px;
+        font-size: 26px;
       }
 
       .registrText {
@@ -683,46 +722,77 @@
         font-size: 12px;
       }
 
+      .menuText {
+        font-size: 12px;
+      }
+
       h3 {
         font-size: 15px;
       }
+
       .gridText {
-        font-size: 15px;
+        font-size: 12px;
+        line-height: 1.1;
+        text-align: center;
+
       }
 
       .img-1 {
-        width: 50%; height: 25%; float: left;
+        width: 50%;
+        height: 25%;
+        float: left;
       }
 
       .img-2 {
-        width: 50%; height: 25%; float: right;
+        width: 50%;
+        height: 25%;
+        float: right;
       }
 
       .img-3 {
-        width: 50%; height: 25%; float: left;
+        width: 50%;
+        height: 25%;
+        float: left;
       }
 
       .img-4 {
-        width: 50%; height: 25%; float: right;
+        width: 50%;
+        height: 25%;
+        float: right;
       }
 
       .img-5 {
-        width: 50%; height: 25%; float: left;
+        width: 50%;
+        height: 25%;
+        float: left;
       }
 
       .img-6 {
-        width: 50%; height: 25%; float: right;
+        width: 50%;
+        height: 25%;
+        float: right;
       }
 
       .img-7 {
-        width: 50%; height: 25%; float: left;
+        width: 50%;
+        height: 25%;
+        float: left;
       }
 
       .img-8 {
-        width: 50%; height: 25%; float: right;
+        width: 50%;
+        height: 25%;
+        float: right;
       }
 
-
+      #section2 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/monikapeceMobil.jpg);
+      background-size: cover;
+    }
+    #section1 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/onastrubickyMobil.jpg);
+      background-size: cover;
+    }
 
     }
 
@@ -772,6 +842,11 @@
         width: 65px;
 
       }
+
+      .menuText {
+        font-size: 8px;
+      }
+
     }
   </style>
 </head>
@@ -891,8 +966,7 @@
     </div><!-- Konec pece-->
 
     <div class="section" id="section3" data-anchor="wine">
-      <div class='menuText'
-        style='width: 100%; text-align: left; padding-left: 5%; font-family: "Roboto"; color: white; font-size: 18px; font-weight: 300;'>
+      <div class='menuText'>
         <!-- Zacatek Menu -->
         <div id="1menu-cl" style='float:left; height:100%; width:33.33%;'>
           <!-- Prvni Sloupec Menu -->
@@ -1005,7 +1079,7 @@
         </div>
         <!-- 3 Sloupec MENU  -->
         <div id="3menu-cl" style='float:right; height:100%; width:33.33%;'>
-          <span class='menuHeader'>KÁVA Mama Coffee ft</span>
+          <span class='menuHeader'>KÁVA Mama Coffee</span>
           <br><br>
           Ristretto <div class='cenaMenu' style="float: right; padding-right: 25%;">59 Kč
           </div>
@@ -1051,58 +1125,62 @@
 
     <div class="section" id="section4" data-anchor="cakes">
       <!-- Doplnkovy Prodej Ctverce Zacatek -->
-
+      <div style="height:60px"></div>
       <div class="grid">
-        <div class="img-1" >
-          <h3 >MAMA COFFEE</h3>
-          <div class='gridText'>Kvalitní fair trade kávu
-            si můžete připravit i doma.</div>
+        <div class="img-1">
+          <div class='gridText'>
+            <h3>MAMA COFFEE</h3>
+            Kvalitní fair trade kávu
+            si můžete připravit i doma.
+          </div>
         </div>
 
-        <div class="img-2" >
-          <h3 >BIO FARMA VAVŘINEC</h3>
-          <div class='gridText'>Mléko, sýry a další mléčné
-            výrobky z bio farmy na doma.</div>
+        <div class="img-2">
+          <div class='gridText'>
+            <h3>BIO FARMA VAVŘINEC</h3>
+            Mléko, sýry a další mléčné
+            výrobky z bio farmy na doma.
+          </div>
         </div>
 
-        <div class="img-3" >
-          <h3 >FAT BROTHERS</h3>
+        <div class="img-3">
+          <h3>FAT BROTHERS</h3>
           <div class='gridText'>Ty nejchutnější delikatesy s
             láskou vyrobené opravdovými
             lidmi.</div>
         </div>
 
-        <div class="img-4" >
-          <h3 >PIVOVAR OLEŠNÁ</h3>
+        <div class="img-4">
+          <h3>PIVOVAR OLEŠNÁ</h3>
           <div class='gridText'>Pivní speciály, které potěší
             českou dušičku.</div>
         </div>
 
 
 
-        <div class="img-5" >
-          <h3 >TADY A TEĎ PEKÁRNA</h3>
+        <div class="img-5">
+          <h3>TADY A TEĎ PEKÁRNA</h3>
           <div class='gridText'>Pořádný kváskoskový chléb
             je u nás základ. Nyní i pro vás.</div>
         </div>
-        <div class="img-6" >
-          <h3 >DOBROTY S PŘÍBĚHEM</h3>
+        <div class="img-6">
+          <h3>DOBROTY S PŘÍBĚHEM</h3>
           <div class='gridText'>Pochunejte si a podpořte
             zaměstnance z chráněné dílny.</div>
         </div>
         <div class="img-7">
-          <h3 >RAVIOLA PASTA</h3>
+          <h3>RAVIOLA PASTA</h3>
           <div class='gridText'>Domácí pasta z BIO vajec
             od itala z Horoměřic.</div>
         </div>
-        <div class="img-8" >
+        <div class="img-8">
           <h3>VINAŘSTVÍ ZAPLETAL</h3>
           <div class='gridText'>Prémiová česká vína
             z rodinného vinařství. </div>
         </div>
 
       </div>
-    
+
 
     </div><!-- Doplnkovy Prodej Konec -->
     <!-- Kontakt Zacatek -->
