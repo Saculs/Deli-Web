@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>DeliEngine</title>
+  <title>DELI ENGINE</title>
 
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
@@ -28,8 +28,8 @@
     $(document).ready(function () {
       $('#fullpage').fullpage({
         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'white', 'white', '#679436'],
-        paddingTop: '60px',
-        anchors: ['home', 'about', 'coffe', 'wine', 'bread', 'kontakt']
+        paddingTop: '40px',
+        anchors: ['home', 'about', 'peceme', 'menu', 'doplnkovy-prodej', 'kontakt']
       });
     });
   </script>
@@ -48,6 +48,7 @@
       width: 100%;
       text-align: left;
       padding-left: 5%;
+      margin-right: 5%;
       font-family: "Roboto";
       color: white;
       font-size: 18px;
@@ -61,7 +62,7 @@
     .img-1 {
       justify-content: center;
       align-items: center;
-      background: linear-gradient(0deg, rgba(87, 82, 82, 0.3), rgba(0, 0, 0, 0.3)), url(photos/mamacoffe.jpg);
+      background: linear-gradient(0deg, rgba(87, 82, 82, 0.4), rgba(0, 0, 0, 0.4)), url(photos/mamacoffe.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -70,7 +71,7 @@
     }
 
     .img-2 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/biofarma.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/biofarma.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -79,7 +80,7 @@
     }
 
     .img-3 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/fatbrothers.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/fatbrothers.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -88,7 +89,7 @@
     }
 
     .img-4 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/pivovar.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/pivovar.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -97,7 +98,7 @@
     }
 
     .img-5 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/tadypekarna.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/tadypekarna.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -106,7 +107,7 @@
     }
 
     .img-6 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/dobroty.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/dobroty.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -115,7 +116,7 @@
     }
 
     .img-7 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/ravioli.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/ravioli.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -124,7 +125,7 @@
     }
 
     .img-8 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/vinko.jpg);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/vinko.jpg);
       background-size: cover;
       background-position: center;
       width: 25%;
@@ -136,8 +137,8 @@
     #menuToggle {
       display: block;
       position: fixed;
-      top: 35px;
-      right: 40px;
+      top: 20px;
+      right: 20px;
 
       z-index: 95;
 
@@ -311,7 +312,7 @@
       width: 100%;
       background-color: white;
       position: fixed;
-      height: 80px;
+      height: 60px;
       top: 0;
       z-index: 90;
     }
@@ -347,7 +348,7 @@
       max-width: 100%;
       max-height: 100%;
       float: center;
-      width: 70px;
+      width: 50px;
       padding-top: 5px;
       position: absolute;
       z-index: 99;
@@ -782,6 +783,11 @@
         float: right;
       }
 
+      #section0 {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/homeMobil.jpg);
+        background-size: cover;
+      }
+
       #section2 {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/monikapeceMobil.jpg);
         background-size: cover;
@@ -792,6 +798,22 @@
         background-size: cover;
       }
 
+    }
+    @media screen and (max-width: 430px) {
+      .menuText {
+        font-size: 11px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      .gridText {
+        font-size: 11px;
+        line-height: 1.1;
+        text-align: center;
+
+      }
     }
 
     @media screen and (max-width: 380px) {
@@ -837,16 +859,20 @@
 
       .logoMob {
 
-        width: 65px;
+        width: 50px;
 
       }
 
       .menuText {
-        font-size: 11px;
+        font-size: 9px;
+      }
+    
+      h3{
+        font-size: 13px;
       }
 
       .gridText {
-        font-size: 13px;
+        font-size: 11px;
         line-height: 1.1;
         text-align: center;
 
@@ -857,7 +883,7 @@
     @media screen and (max-width: 360px) {
 
       .gridText {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.1;
         text-align: center;
       }
@@ -884,9 +910,9 @@
       <div class="mainmenu">
         <a href="#about">O NÁS</a>
 
-        <a href="#coffe">PEČEME</a>
-        <a href="#wine">MENU</a>
-        <a href="#bread">DOPLŇKOVÝ PRODEJ</a>
+        <a href="#peceme">PEČEME</a>
+        <a href="#menu">MENU</a>
+        <a href="#doplnkovy-prodej">DOPLŇKOVÝ PRODEJ</a>
         <a href="#kontakt">KONTAKT</a>
 
 
@@ -930,13 +956,13 @@
         <a href="#about">
           <li>O NÁS</li>
         </a>
-        <a href="#coffe">
+        <a href="#peceme">
           <li>PEČEME</li>
         </a>
-        <a href="#wine">
+        <a href="#menu">
           <li>MENU</li>
         </a>
-        <a href="#bread">
+        <a href="#doplnkovy-prodej">
           <li>DOPLŇKOVÝ PRODEJ</li>
         </a>
         <a href="#kontakt">
@@ -978,7 +1004,7 @@
 
 
 
-    <div class="section" id="section2" data-anchor="coffe">
+    <div class="section" id="section2" data-anchor="peceme">
 
       <div class="secText">
         <!-- Zacatek pece-->
@@ -988,7 +1014,7 @@
       </div>
     </div><!-- Konec pece-->
 
-    <div class="section" id="section3" data-anchor="wine">
+    <div class="section" id="section3" data-anchor="menu">
       <div class='menuText'>
         <!-- Zacatek Menu -->
         <div id="1menu-cl" style='float:left; height:100%; width:33.33%;'>
@@ -1093,7 +1119,7 @@
           <br>Domácí kombucha <div class='cenaMenu' style="float: right; padding-right: 20%;">59 Kč
           </div>
           <!-- polozka-->
-          <br>Limonády Fentimas <div class='cenaMenu' style="float: right; padding-right: 20%;">59 Kč
+          <br>Limo Fentimas <div class='cenaMenu' style="float: right; padding-right: 20%;">59 Kč
           </div>
           <!-- polozka-->
           <br>Royal Crown Cola <div class='cenaMenu' style="float: right; padding-right: 20%;">59 Kč
@@ -1221,8 +1247,9 @@
         <!-- Kontakt konec + Mapa -->
       </div>
       <div class="mapouter" style="width: 100%; position: absolute; bottom: -5px; ">
+
         <div class="gmap_canvas"><iframe width="100%" height="200px" id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Walterovo%20n%C3%A1m%C4%9Bst%C3%AD%20985%2F6%2C%20158%2000%20Praha%205&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.587884884953!2d14.37031091571715!3d50.056550979422994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95b20913e979%3A0x393c3fac4448e08!2sDELI%20ENGINE!5e0!3m2!1sen!2scz!4v1606335794278!5m2!1sen!2scz"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
       </div>
     </div>
